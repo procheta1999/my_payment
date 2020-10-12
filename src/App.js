@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import { AppBar, Button, Card, Icon, IconButton, TextField, Toolbar, Typography } from '@material-ui/core';
+import Intro from './pages/Intro';
+import Page2 from './pages/page2';
+import Page3 from './pages/page3';
+import Page4 from './pages/page4';
+import Page5 from './pages/page5';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path='/' component={Intro} />
+        <Route path='/page2' component={Page2} />
+        <Route path='/page3' component={Page3} />
+        <Route path='/page4' component={Page4} />
+        <Route path='/page5' component={Page5} />
+      </Switch>
     </div>
+
   );
 }
 
