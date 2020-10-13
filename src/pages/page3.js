@@ -13,18 +13,17 @@ export default function Page3(){
         <Typography style={{margin:"2rem 0rem 2rem 0rem",color:"white"}}>Payment to
         <br></br>
       <span style={{margin:"0rem 0rem 0rem 2rem"}}>
-        hi</span></Typography> 
+      Exposys Data Labs</span></Typography> 
         </IconButton></Toolbar></div>
       <Card style={{backgroundColor:"white", padding:"0rem 4rem 3rem 0rem"}}>
         
-        <Typography variant="subtitle1" style={{color:"grey", margin:"1rem 0.5rem 1rem 1rem"}}>Purpose of Payment</Typography>
-        <TextField id="outlined-basic" variant="outlined" style={{margin:"0rem 1rem 0rem 5rem"}}></TextField>
-        <Typography variant="subtitle1" style={{color:"grey", margin:"1rem 6rem 1rem 1rem"}}>Amount</Typography>
-        <div style={{margin:"1rem 6rem 1rem 8rem"}}>
-        <div className="flex" >
-        <span className="currency">$</span>
-        <TextField id="outlined-basic" variant="outlined" style={{width:"10rem"}}></TextField>
-      </div></div>
+        <Typography variant="subtitle1" style={{color:"grey", margin:"1rem 0.1rem 0rem 0.1rem"}}>Name</Typography>
+        <TextField id="outlined-basic" variant="outlined" type="text" style={{margin:"0rem 1rem 0rem 5rem"}}></TextField>
+        <Typography variant="subtitle1" style={{color:"grey", margin:"1rem 0.5rem 1rem 1rem"}}>Email</Typography>
+        <TextField id="outlined-basic" variant="outlined" type="email" style={{margin:"0rem 1rem 0rem 5rem"}}></TextField>
+        <Typography variant="subtitle1" style={{color:"grey", margin:"1rem 0.5rem 1rem 1rem"}}>Phone Number</Typography>
+        <TextField id="outlined-basic" variant="outlined" type="number" style={{margin:"0rem 1rem 0rem 5rem"}}></TextField>
+        <br></br>
         <br></br>
         <Button variant="contained" style={{backgroundColor:"green",height:"3rem",width:"20rem",margin:"0rem 0.5rem 1rem 6rem",color:"white"}}><center>Pay</center></Button></Card></center></div>
     </header>
